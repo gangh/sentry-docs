@@ -122,9 +122,15 @@ $ yarn add @sentry/browser @sentry/tracing
 $ npm install @sentry/browser @sentry/tracing
 ```
 
+<Alert level="warning" title="Note"><markdown>
+
+We switched our package name from `@sentry/apm` to `@sentry/tracing`. If you were previously using `@sentry/apm`, please see [Switching to the tracing package](/product/performance/apm-to-tracing/)
+
+</markdown></Alert>
+
 Alternatively, instead of `npm` packages, you can use our pre-built CDN bundle that combines both `@sentry/browser` and `@sentry/tracing`:
 
-<JsCdnTag apm={true} />
+<JsCdnTag tracing />
 
 Next, initialize the integration in your call to `Sentry.init`:
 
